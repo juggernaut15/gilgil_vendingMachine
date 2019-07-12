@@ -106,6 +106,6 @@ void Widget::on_pbReset_clicked()
         m -= 10;
     }
 
-    reset.sprintf("500 : %d\n 100 : %d\n 50 : %d\n 10 : %d\n",num500, num100, num50, num10);
+    reset.sprintf("500 : %d\n 100 : %d\n 50 : %d\n 10 : %d",num500, num100, num50, num10);
     msg.information(nullptr, "reset", reset);
 }
