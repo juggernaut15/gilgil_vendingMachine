@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    changeMoney(0);
+    checkmoney();
 }
 
 Widget::~Widget()
@@ -88,7 +88,6 @@ void Widget::on_pbReset_clicked()
     money = 0;
     changeMoney(0);
 
-    money = 0;
     while(m / 500 != 0){
         num500++;
         m -= 500;
